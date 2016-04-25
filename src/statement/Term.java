@@ -16,11 +16,7 @@ public class Term {
 	 */
 	private int exp;
 	
-	/**
-	 * Creates a Term object,
-	 * 
-	 * @param c the coefficient of the new term
-	 * @param e the exponent of the new term
+	/* Creates a Term object
 	 */
 	public Term(int c, int e) {
 		if (e < 0) { // Cannot have a negative exponent in a term
@@ -40,7 +36,7 @@ public class Term {
 	/**
 	 * Returns the coefficient of the current term.
 	 * 
-	 * @return coefficient as an int
+	 * return coefficient as an integer
 	 */
 	public int getCoefficient(){
 		return coeff;
@@ -57,9 +53,8 @@ public class Term {
 	
 	
 	/**
-	 * Returns the term object as a string, i.e. "4x^3"
-	 * 
-	 * @return string of the Term
+	 * Returns the term object as a string
+	 * return string of the Term
 	 */
 	public String toString(){
 		String term = "";
@@ -75,7 +70,7 @@ public class Term {
 				term += "^" + Integer.toString(exp);
 		}
 		
-		if (term.equals("")) // when coeff = 1 & exp = 0, the term is just 1
+		if (term.equals("")) // when coefficient is 1 & exponent is 0, the term is just 1
 			term += "1";
 
 		return term;

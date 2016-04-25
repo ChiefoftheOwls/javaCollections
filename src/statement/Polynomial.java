@@ -16,20 +16,12 @@ public class Polynomial {
 	/**
 	 * Constructor for the Polynomial.
 	 * 
-	 * Inits the array to hold terms
+	 * Initializes the array to hold terms
 	 */
 	public Polynomial() {
 		poly = new ArrayList<Term>();
 	}
 	
-	/**
-	 * Insert a new Term into the polynomial
-	 * 
-	 * Term is automatically placed so that the other terms
-	 * are listed in ascending order by exponent.
-	 * @param c coefficient of the new term
-	 * @param e exponent of the new term
-	 */
 	public void insert(int c, int e) {
 		if (poly.size() != 0) {
 			for (int x = 0; x < poly.size(); x++) {
@@ -47,8 +39,7 @@ public class Polynomial {
 	 * Delete a term from the polynomial
 	 * 
 	 * If the term isn't in the list, user is alerted.
-	 * @param c coefficient of the term to delete
-	 * @param e exponent of the term to delete
+	 * 
 	 */
 	public void delete(int c, int e) {
 		for (int x = poly.size() - 1; x > -1; x--) { // find correct term
